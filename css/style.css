@@ -6,7 +6,7 @@
 }
 .container{
     width: 100%;
-    background-color: black;
+    background-color: rgb(1, 40, 40);
 }
 nav{
     display: flex;
@@ -14,12 +14,15 @@ nav{
     justify-content: space-evenly;
 }
 nav img{
-    height: 100PX;
+    height: 100px;
+    width: 300px;
+    margin: 5px;
 
 }
 nav ul{
     list-style: none;
     display: flex;
+    text-decoration: underline;
 }
 
 nav ul li {
@@ -30,15 +33,16 @@ nav ul li a{
     color:white;
     font-size: 25px;
     position: relative;
+    text-decoration: underline;
 }
 nav ul li a::after{
     content: "";
-    height: 2px;
+    height: 3px;
     background-color: crimson;
-    width: 50%;
+    width: 0%;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: 0;
     transition: .5s ease-in-out;
 }
 nav ul li a:hover::after{
@@ -156,7 +160,7 @@ nav ul li a:hover::after{
  }
  #about hr{
     height: 5px;
-    width: 60%;
+    width: 80%;
     background-color:crimson;
     margin: 0 auto;
     border-radius: 10px;
@@ -194,7 +198,7 @@ nav ul li a:hover::after{
 #skills hr{
     height: 5px;
     width: 80%;
-    background-color: #6a2c2c;
+    background-color:crimson;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
@@ -211,16 +215,22 @@ nav ul li a:hover::after{
  }
  .skills-box{
     height: 200px;
-    background: linear-gradient(45deg,crimson,rgb(58, 58, 128));
-    border-radius: 10px;
+    background: linear-gradient(45deg,rgb(196, 245, 245) ,rgb(58, 58, 128));
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
  }
+ .skills-box a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
  .skills-box img{
-    height: 90%;
-    width: 80%;
-    object-fit: contain;
+    height: 80%;
+    border-radius: 50%;
  }
  .skills-box:hover{
     transform: translate(-7px
@@ -236,7 +246,7 @@ nav ul li a:hover::after{
 #info hr{
     height: 5px;
     width: 80%;
-    background-color: #6a2c2c;
+    background-color:crimson;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
@@ -281,7 +291,7 @@ nav ul li a:hover::after{
 #personal hr{
     height: 5px;
     width: 80%;
-    background-color: #6a2c2c;
+    background-color:crimson;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
@@ -381,3 +391,23 @@ nav ul li a:hover::after{
     font-weight: bold;
     font-size: 20px;
  }
+#footer {
+    margin-top: 60px;
+    height: 60px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+}
+.footer-inner {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-inner h3{
+    color: white;
+    font-size: 18px;
+
+}
