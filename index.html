@@ -9,6 +9,15 @@
     <link rel="icon" href="./images/golu logo.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- aos animation  -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- aos animation  -->
+
+      <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 </head>
 
@@ -18,7 +27,7 @@
         <!-- header start -->
 
         <nav>
-            <img src="./images/golu logo.jpg" alt="golu kumar logo" title="golu kumar logo">
+            <img src="./images/golu logo.jpg" alt="golu kumar logo" title="golu kumar logo"  data-aos="fade-right">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -40,12 +49,12 @@
 
         <section id="Home">
             <div class="hero-container">
-                <div class="profile-outer">
+                <div class="profile-outer"  data-aos="fade-right" data-aos-duration="3000">
                     <div class="profile">
-                        <img src="./images/edit2.jpg" alt="golu kumar" title="golu kumar sharma">
+                        <img src="./images/edit2.jpg" alt="golu kumar" title="golu kumar sharma"/>
                     </div>
                 </div>
-                <div class="info-outer">
+                <div class="info-outer animate__animated animate__backInDown">
                     <h1>Hey, I'm Golu kumar</h1>
                     <div class="typing">
                         <span></span>
@@ -102,7 +111,7 @@
 
         <!-- my skills start -->
 
-        <section id="skills">
+        <section id="skills" data-aos="flip-left" data-aos-duration="2000">
             <h1>My skills</h1>
             <hr />
             <div class="skills-outer">
@@ -181,7 +190,7 @@
             <h1>Contact me</h1>
             <hr />
             <div class="details">
-                <div class="inner-details">
+                <div class="inner-details" data-aos="fade-down-left" data-aos-duration="4000">
                    <h1 style="color: aqua;"> Let's Build the Future Together</h1>
                     <p>I'm passionate about building secure, scalable, and high-performance web applications using the .NET ecosystem. Whether
                     it's developing robust backend APIs with ASP.NET Core, designing efficient database structures in SQL Server, or
@@ -197,7 +206,7 @@
                         <li>Lucknow, Uttar Pradesh</li>
                     </ul>
                 </div>
-                <div class="inner-details two">
+                <div class="inner-details two" data-aos="flip-right" data-aos-duration="10s">
                     <label for="">Your Name</label><br>
                     <input type="text" placeholder=" enter your name"><br>
                     <label for="">Your Email</label><br>
@@ -236,6 +245,11 @@
         </section>
         <!-- Footer section End  -->
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

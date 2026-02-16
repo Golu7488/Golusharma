@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins",sans-serif;
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -411,3 +412,4 @@ nav ul li a:hover::after{
     font-size: 18px;
 
 }
+
